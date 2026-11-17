@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Salgados para Festas</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <h1>Salgados Félix</h1>
+    <p>Sabor e crocância para deixar sua festa especial.</p>
+  </header>
+
+  <main>
+    <section class="cartao" aria-labelledby="sobre-site">
+      <h2 id="sobre-site">Sobre o site</h2>
+
+      <img
+        src="imagens/cesta.jpg"
+        alt="Recipiente com salgados fritos, incluindo coxinhas, bolinhas de queijo, kibes e outros petiscos."
+        class="foto-destaque"
+      >
+      <p class="legenda">Uma seleção de salgados para compartilhar com a família e os amigos.</p>
+
+      <p>Preparamos encomendas para aniversários, reuniões e outros momentos especiais. Preencha o formulário para escolher seus salgados favoritos.</p>
+
+      <form action="#formulario" method="get" id="formulario">
+        <h2>Faça sua encomenda</h2>
+        <p>Os campos marcados com * são obrigatórios.</p>
+
+        <p>
+          <label for="nomeCompleto">Nome completo: *</label>
+          <input type="text" id="nomeCompleto" placeholder="Ex.: Daniel Felix" minlength="3" autocomplete="name" required>
+        </p>
+
+        <p>
+          <label for="email">E-mail: *</label>
+          <input type="email" id="email" placeholder="Ex.: daniel@email.com" autocomplete="email" required>
+        </p>
+
+        <p>
+          <label for="celular">Celular: *</label>
+          <input type="tel" id="celular" placeholder="Ex.: (41) 99999-9999" pattern="[0-9()+ .-]{10,20}" title="Digite de 10 a 20 caracteres, usando números, espaços, parênteses, ponto ou hífen." autocomplete="tel" required>
+        </p>
+
+        <fieldset>
+          <legend>1. Qual salgado faz seu dia mais feliz?</legend>
+          <p>
+            <input type="radio" id="coxinha" name="favorito" value="coxinha" required>
+            <label for="coxinha">Coxinha de frango</label>
+          </p>
+          <p>
+            <input type="radio" id="pastel" name="favorito" value="pastel">
+            <label for="pastel">Pastel de carne</label>
+          </p>
+          <p>
+            <input type="radio" id="risoles" name="favorito" value="risoles">
+            <label for="risoles">Risoles</label>
+          </p>
+          <p>
+            <input type="radio" id="kibe" name="favorito" value="kibe">
+            <label for="kibe">Kibe</label>
+
+            <p>
+            <input type="radio" id="Bolinha de queijo" name="favorito" value="Bolinha de queijo">
+            <label for="risoles">Bolinha de Queijo</label>
+                   
+         
+        </fieldset>
+
+        <fieldset>
+          <legend>2. Faça sua encomenda</legend>
+          <p>
+            <input type="checkbox" id="pedido-coxinha" name="encomenda" value="coxinhas">
+            <label for="pedido-coxinha">100 coxinhas de frango</label>
+          </p>
+          <p>
+            <input type="checkbox" id="pedido-kibe" name="encomenda" value="kibes">
+            <label for="pedido-kibe">50 kibes</label>
+          </p>
+          <p>
+            <input type="checkbox" id="pedido-queijo" name="encomenda" value="bolinhas-de-queijo">
+            <label for="pedido-queijo">50 bolinhas de queijo</label>
+          </p>
+          <p>
+            <input type="checkbox" id="pedido-pastel" name="encomenda" value="pasteis">
+            <label for="pedido-pastel">50 pastéis de carne</label>
+          </p>
+
+          <p>
+            <input type="checkbox" id="Risoles" name="encomenda" value="Risoles">
+            <label for="pedido-pastel">50 Risoles</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="observacoes">Observações:</label><br>
+          <textarea id="observacoes" name="observacoes" rows="4" cols="40"></textarea>
+        </p>
+
+        <button type="submit">Enviar Pedido</button>
+        
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Salgados Félix™ — Feito para momentos felizes.</p>
+  </footer>
+</body>
+</html>
